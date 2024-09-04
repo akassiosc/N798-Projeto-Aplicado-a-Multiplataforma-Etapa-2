@@ -2,7 +2,7 @@ const env = process.env;
 
 export const MONGO_DB_URL = env.MONGO_DB_URL
   ? env.MONGO_DB_URL
-  : "mongodb://admin:123456@localhost:27017";
+  : "mongodb+srv://sales-db:1234567890@sales-db.byr93.mongodb.net/?retryWrites=true&w=majority&appName=sales-db";
 
 export const API_SECRET = env.API_SECRET
   ? env.API_SECRET
@@ -10,7 +10,7 @@ export const API_SECRET = env.API_SECRET
 
 export const RABBIT_MQ_URL = env.RABBIT_MQ_URL
   ? env.RABBIT_MQ_URL
-  : "amqp://localhost:5672";
+  : "amqps://jwqzlzca:Pfn868xuZxcXNHxdHdrIW07CQK06t3Jy@prawn.rmq.cloudamqp.com/jwqzlzca2";
 
 export const PRODUCT_API_URL = env.PRODUCT_API_URL
   ? env.PRODUCT_API_URL
