@@ -30,11 +30,11 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
   rabbitmq:
-    host: ${RABBIT_MQ_HOST:localhost}
+    host: ${RABBIT_MQ_HOST:prawn.rmq.cloudamqp.com}
     port: ${RABBIT_MQ_PORT:5672}
-    username: ${RABBIT_MQ_USER:guest}
-    password: ${RABBIT_MQ_PASSWORD:guest}
-    virtual-host: ${RABBIT_MQ_VHOST:}
+    username: ${RABBIT_MQ_USER:jwqzlzca}
+    password: ${RABBIT_MQ_PASSWORD:Pfn868xuZxcXNHxdHdrIW07CQK06t3Jy}
+    virtual-host: ${RABBIT_MQ_VHOST:jwqzlzca}
 
 app-config:
 

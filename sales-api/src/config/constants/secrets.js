@@ -10,7 +10,7 @@ export const API_SECRET = env.API_SECRET
 
 export const RABBIT_MQ_URL = env.RABBIT_MQ_URL
   ? env.RABBIT_MQ_URL
-  : "amqps://jwqzlzca:Pfn868xuZxcXNHxdHdrIW07CQK06t3Jy@prawn.rmq.cloudamqp.com/jwqzlzca2";
+  : "amqps://jwqzlzca:Pfn868xuZxcXNHxdHdrIW07CQK06t3Jy@prawn.rmq.cloudamqp.com/jwqzlzca";
 
 export const PRODUCT_API_URL = env.PRODUCT_API_URL
   ? env.PRODUCT_API_URL
