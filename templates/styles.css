@@ -45,8 +45,25 @@ body {
     justify-content: space-between;
 }
 
+.first-about {
+    display: flex;
+    flex-direction: column;
+    border: 0.5rem solid #c8ff00;
+    width: 40%;
+    height: 30rem;
+    margin-left: 30%;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.second-about {
+    /* border: 0.5rem solid #ff82c0; */
+margin: 1rem;
+justify-content: center;
+align-items: center;
+
+}
 .second {
-    /* border: 0.5rem solid #c8ff00; */
+    /* border: 0.5rem solid #ff82c0; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
