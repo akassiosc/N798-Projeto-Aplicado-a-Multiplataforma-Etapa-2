@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <title>Carrinho de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f06292;
+            color: white;
+        }
+        header {
+            background-color: #880e4f;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cart-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .cart-item {
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .cart-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .cart-item p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .cart-item button {
+            background-color: #f06292;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .cart-item button:hover {
+            background-color: #ec407a;
+        }
+        .total {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .checkout-btn {
+            background-color: #d81b60;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .checkout-btn:hover {
+            background-color: #ad1457;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>iCloset</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="usuario.html">Cadastro de Cliente</a>
+            <a href="login.html">Login</a>
+            <a href="adm.html">Administração</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Carrinho de Compras</h2>
+        <div id="cartContainer" class="cart-container"></div>
+        <p id="totalPrice" class="cart-total"></p>
+    
+        <script>    
+            document.addEventListener('DOMContentLoaded', () => {
+        loadCartFromServer();
+
+        console.log(localStorage.getItem('cart'));
+
+});
+
+        </script>
+        <a href="pedido.html" class="checkout-btn">Finalizar Compra</a>
+    </main>
+</body>
+</html>
